@@ -52,7 +52,7 @@ public class CommandExecutor {
     }
 
     private void createCanvas(int width, int height) {
-        if (width < 3 || height < 3) {
+        if (width < 1 || height < 1) {
             throw new InvalidCommandException("Invalid Command: Canvas coordinates are not valid.");
         }
         canvas = Optional.ofNullable(new TextCanvas(width, height));
